@@ -1,0 +1,79 @@
+<ion-header>
+
+  <ion-navbar color="green">
+    <ion-title>Add New Supplier</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+
+<ion-content class="background">
+  <ion-card>
+    <ion-card-header>
+      New Supplier Details 
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list no line>
+        
+        <p>
+        <ion-item>
+          <ion-label fixed><b>Name</b></ion-label>
+        <ion-input type="text" placeholder="Supplier Name" name="name" [(ngModel)]="name"></ion-input>
+        </ion-item>
+        </p>
+
+        <p>
+        <ion-item>
+          <ion-label fixed><b>Reg.Number</b></ion-label>
+        <ion-input type="text" placeholder="Registration Number" name="reg" [(ngModel)]="reg"></ion-input>
+        </ion-item>
+        </p>
+
+        <p>  
+        <ion-item>
+          <ion-label fixed><b>Address</b></ion-label>
+        <ion-input type="text" placeholder="Address" name="address" [(ngModel)]="address"></ion-input>
+        </ion-item>
+        </p>
+
+        <p>
+        <ion-item>
+          <ion-label fixed><b>Email</b></ion-label>
+        <ion-input type="text" placeholder="Email Address" name="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        </p>
+
+        <p>
+        <ion-item>
+          <ion-label fixed><b>Contact</b></ion-label>
+        <ion-input type="text" placeholder="Contact Number" name="contact" [(ngModel)]="contact"></ion-input>
+        </ion-item>
+        </p>
+
+        <p>
+        <ion-item>
+          <ion-label fixed><b>Username</b></ion-label>
+        <ion-input type="text" placeholder="Username" name="username" [(ngModel)]="username"></ion-input>
+        </ion-item>
+        </p>
+
+        <p>
+        <ion-item>
+          <ion-label fixed><b>Password</b></ion-label>
+        <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        </p>
+                
+	
+	<button ion-button (click)="submit()" block outline color="green">Submit</button>
+    
+    </ion-list>
+    </ion-card-content>
+
+
+  </ion-card>
+  <button class="bottom" ion-button (click)="cancal()" block outline color="danger">Cancal</button>
+</ion-content>

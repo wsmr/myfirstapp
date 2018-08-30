@@ -1,0 +1,46 @@
+<ion-header>
+
+  <ion-navbar color="green">
+    <ion-title>Branch Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+
+<ion-content class="background">
+
+<ion-item-group>
+    <ion-item-divider color="light">Dailly Fuel Details</ion-item-divider>
+    <ion-item>
+    	<ion-col col-12 *ngFor="let bch of bchData">
+
+      <a>
+        <div *ngFor="let record of bch">
+          {{ record.tankName }}
+        </div>
+      </a>
+
+    </ion-col>
+    </ion-item>
+     
+</ion-item-group>
+
+<ion-item-group>
+    <ion-item-divider color="light">Fuel Requests</ion-item-divider>
+    <ion-item>
+ <!--    	<ion-col col-12 *ngFor="let bch of bchData">
+
+      <a>
+        <div *ngFor="let record of bch">
+          {{ record.maxVolume }}
+        </div>
+      </a>
+
+    </ion-col> -->
+    </ion-item>
+     
+</ion-item-group>
+
+</ion-content>

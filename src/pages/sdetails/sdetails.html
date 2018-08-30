@@ -1,0 +1,41 @@
+
+<ion-header>
+
+  <ion-navbar color="green">
+    <ion-title>Suppliers Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="background">
+
+<ion-fab top right edge>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-fab (click)="addsp()"><ion-icon name="person-add"></ion-icon></button>
+      <!-- <button ion-fab><ion-icon name="trash"></ion-icon></button> -->
+      <!-- <button ion-fab><ion-icon name="trash"></ion-icon></button> -->
+    </ion-fab-list>
+  </ion-fab>
+
+
+
+
+  <ion-list>
+    <ion-list-header>
+      presant supplier name
+    </ion-list-header>
+    <a ion-item (click)="openModal({charNum: 0})">
+      Ceylon Petroleum Corporation
+    </a>
+    <a ion-item (click)="openModal({charNum: 1})">
+      Indian Oil Corporation
+    </a>
+<!--<a ion-item (click)="openModal({charNum: 2})">
+     supplier name
+   </a> -->
+</ion-list>
+
+</ion-content>
+

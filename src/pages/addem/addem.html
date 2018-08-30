@@ -1,0 +1,79 @@
+<ion-header>
+
+  <ion-navbar color="green">
+    <ion-title>Add New Employeee</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+
+<ion-content class="background">
+  <ion-card>
+    <ion-card-header>
+      New Employer Details 
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list no line>
+        
+        <p>
+        <ion-item>
+          <ion-label fixed><b>Name</b></ion-label>
+        <ion-input type="text" placeholder="Employee Name" name="name" [(ngModel)]="username"></ion-input>
+        </ion-item>
+        </p>
+
+        <p>
+        <ion-item>
+          <ion-label fixed><b>NIC</b></ion-label>
+        <ion-input type="text" placeholder="NIC Number" name="nic" [(ngModel)]="nic"></ion-input>
+        </ion-item>
+        </p>
+
+        <p> 
+        <ion-item>
+          <ion-label fixed><b>Telephone</b></ion-label>
+        <ion-input type="text" placeholder="Contact Number" name="contact" [(ngModel)]="contact"></ion-input>
+        </ion-item>
+	      </p>
+
+	<button ion-button (click)="submit()" block outline color="green">Submit</button>
+    
+    </ion-list>
+    </ion-card-content>
+
+
+  </ion-card>
+  
+  <button class="bottom" ion-button (click)="cancal()" block outline color="danger">Cancal</button>
+
+</ion-content>
+
+
+
+<!-- <ion-content class="background">
+	<form>
+		<div class="list">
+			<label class="item item-input">
+				<span class="input-label">Name</span>
+				<input type="text" placeholder="Employee Name">
+			</label>
+		</div>
+		<div class="list">
+			<label class="item item-input">
+				<span class="input-label">NIC </span>
+				<input type="text" placeholder="Employee NIC Number">
+			</label>
+		</div>
+		<div class="list">
+			<label class="item item-input">
+				<span class="input-label">Telephone</span>
+				<input type="text" placeholder="Employee Contact Number">
+			</label>
+		</div>
+
+	</form>
+</ion-content>
+ -->

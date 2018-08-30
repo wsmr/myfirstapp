@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar   color="green">
+    <ion-title   class="score">
+      <!-- <ion-icon name="beer" item-start></ion-icon> -->
+      <img src='assets/imgs/gs.png' width="30px" />
+      <font style="margin-left : 50px;">
+     Thel.Lk
+   </font>
+    </ion-title>
+  </ion-navbar>
+</ion-header> 
+
+<ion-content class="background">
+  <ion-card>
+    <ion-card-header>
+      LOGIN FORM
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list no line>
+        
+        <ion-item>
+          <ion-label fixed>UserName</ion-label>
+        <ion-input type="text" name="username" [(ngModel)]="username"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label fixed>Password</ion-label>
+        <ion-input type="password" name="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+          
+          <a>Forget your login details?<b>Get help signing in</b></a>
+            <button ion-button (click)="loginCheck()" block outline color="green">Log In</button>
+            <!-- <p>Or</p>
+
+            <button ion-button block color="facebook">
+              <ion-icon name="logo-facebook"></ion-icon> Login with facebook
+            </button> -->
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <button class="bottom" ion-button (click)="signCheck()" clear full color="light">SignIn</button>
+</ion-content>

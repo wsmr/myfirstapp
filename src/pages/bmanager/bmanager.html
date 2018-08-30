@@ -1,0 +1,45 @@
+<!--
+  Generated template for the BmanagerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar  color="green">
+    <ion-title>Login As Manager<br><small>Main Menu</small></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="background">
+
+	<div #map id="map"></div>
+	
+	<ion-card>
+
+		<ion-list>
+		    <button ion-item (click)="bDetails()" >
+		      <ion-icon name="clipboard" item-start></ion-icon>
+		      Branch Details
+		    </button>
+
+		   <button ion-item (click)="eDetails()" >
+		      <ion-icon name="man" item-start></ion-icon>
+		      Employee Details
+		    </button>
+
+		    <button ion-item (click)="sDetails()" >
+		      <ion-icon name="cart" item-start></ion-icon>
+		      Suppliers Details
+		    </button>
+
+		    <button ion-item (click)="oDetails()" >
+		      <ion-icon name="globe" item-start></ion-icon>
+		      Other Branch Details
+		    </button>
+		  </ion-list>
+
+	</ion-card>
+</ion-content>
